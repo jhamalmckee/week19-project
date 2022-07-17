@@ -1,6 +1,5 @@
 provider "aws" {
   region  = var.region
-  skip_requesting_account_id = true
   # shared_credentials_file = "\\Users\\jasonceballos\\.aws\\credentials"
   access_key = "AWS_ACCESS_KEY_ID"
   secret_key = "AWS_SECRET_ACCESS_KEY"
