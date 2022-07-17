@@ -5,4 +5,5 @@ provider "aws" {
   # assume_role {
   # role_arn = "arn:aws:iam::254452634027:role/EC2Creation"
   # }
-}
+  sts_regional_endpoints = "regional"
+  }
