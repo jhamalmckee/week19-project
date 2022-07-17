@@ -8,7 +8,7 @@ data "cloudinit_config" "config" {
   base64_encode = true
   part {
     content_type = "text/cloud-config"
-    content      = templatefile("${path.module}/cloud_config.yaml", var.db_config) #B
+    content      = templatefile("${path.module}/cloud_config.yaml", var.sg) #B
   }
 }
 
@@ -18,7 +18,7 @@ data "aws_ami" "ubuntu" {
     name   = "name"
     values = ["ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-*"]
   }
-  owners = ["099720109477"]
+  owners = ["254452634027"]
 }
 
 resource "aws_launch_template" "webserver" {
