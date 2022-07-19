@@ -18,7 +18,7 @@ data "aws_ami" "ubuntu" {
     name   = "name"
     values = ["ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-*"]
   }
-  owners = ["254452634027"]
+  owners = ["099720109477"]
 }
 
 resource "aws_launch_template" "webserver" {
