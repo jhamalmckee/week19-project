@@ -1,11 +1,11 @@
 variable "namespace" {
-  description = "The project namespace to use for unique resource naming"
-  default     = "3-tier-architecture"
+  description = "Name of Week 19 Project"
+  default     = "week19project"
   type        = string
 }
 
 variable "ssh_keypair" {
-  description = "SSH keypair to use for EC2 instance"
+  description = "Key Pair Being Used for Week 19 Project"
   default     = null #A
   type        = string
 }
