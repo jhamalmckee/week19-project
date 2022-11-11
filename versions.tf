@@ -1,10 +1,9 @@
 terraform {
    cloud {
-    organization = "jc3tierproject"
-    hostname = "app.terraform.io" # Optional; defaults to app.terraform.io
+    organization = "CDCB1"
 
     workspaces {
-      name = "3-tier-architecture"
+      name = "week19project"
     }
   }
   required_providers {
